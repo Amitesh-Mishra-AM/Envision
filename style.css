@@ -1,5 +1,6 @@
 /* -------------------------------------- fonts ---------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* -------------------------------------- fonts ---------------------------------------------------- */
 
 @tailwind base;
@@ -9,7 +10,7 @@
     /* The image used */
     background-image: url("images/bg-2.jpeg");
   
-    min-height: 900px;
+    min-height: 100vh;
   
     /* Center and scale the image nicely */
     background-position: center;

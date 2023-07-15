@@ -7,36 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Envision |The Future is in your hand</title>
 </head>
 
 <body>
     <header class="bg-img">
-        <nav
-            class="absolute flex items-center  mx-auto w-[100vw]  font-[poppins] text-[#f5f5dc] font-extrabold  overflow-hidden">
-            <div class="right-0 flex justify-between items-center gap-[0.2rem]  ">
-                <img src="images/profile.jpg" alt="logo" class="w-[5rem] mx-[1.5rem] my-[1rem]">
-                <span class="text-[2.5rem]">
+        <!-- <img class="relative bg-center bg-no-repeat bg-cover min-h-[100vh]" src="images/bg-2.jpeg" alt="bg image"> -->
+
+        <nav class="absolute md:flex  mx-auto w-[100vw]  font-[poppins] text-[#f5f5dc] font-extrabold  overflow-hidden">
+            <div class="right-0 flex justify-center  items-center    ">
+                <img src="images/profile.jpg" alt="logo" class="w-[4rem] mx-[1.5rem] my-[1rem] hidden md:block">
+                <span class="text-[2rem] text-center">
                     <color class="text-green-800">En</color>vision
                 </span>
+                <span class="md:hidden text-[2rem] nav-links">
+                    <!-- <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden"></ion-icon> -->
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a> -->
+                </span>
             </div>
-            <div class="ml-[52rem] left-0 flex justify-between items-center gap-[3rem]">
-                <a href="#home" class="text-[1.5rem] font-thin">Home</a>
-                <a href="#about_us" class="text-[1.5rem] font-thin">About</a>
-                <a href="#our_work" class="text-[1.5rem] font-thin">Our Work</a>
-                <a href="#contact_us" class="text-[1.5rem] font-thin">Contact us</a>
-                <a href="#contact_us"
-                    class="button text-[1.5rem]   bg-green-800 rounded-full px-[1.2rem] py-[0.4rem] font-light">Donate
+            <div class=" md:flex md:gap-[2rem] md:w-[100vw] md:justify-end md:mr-10   hidden nav-links overflow-hidden duration-500 items-center left-0 gap-[2rem] "
+                id="myLinks">
+                <a href="#home" class="text-[1rem] font-thin lg:text-[1.5rem]">Home</a>
+                <a href="#about_us" class="text-[1rem] font-thin lg:text-[1.5rem]">About</a>
+                <a href="#our_work" class="text-[1rem] font-thin lg:text-[1.5rem]">Our Work</a>
+                <a href="#contact_us" class="text-[1rem] font-thin lg:text-[1.5rem]">Contact us</a>
+                <a href="#Donate_now"
+                    class="button text-[1rem] bg-green-800 rounded-full px-[1.2rem] py-[0.4rem] font-light lg:text-[1.5rem]">Donate
                     now</a>
             </div>
         </nav>
         <span
-            class="absolute w-[1154px] my-[40vh] mx-[25rem]  flex flex-col text-center justify-center items-center align-middle text-[#f5f5dc] text-[36px]">
-            <span class="font-bold text-[96px]"> Empowering Change <span>Saving the Planet </span> </span>Together we rise,
-            taking action for a better tomorrow.
-        </span>
+            class="md:text-[4rem] md:leading-[4rem] absolute text-[#f5f5dc] font-bold text-[2rem] flex flex-col h-[100vh] w-[100vw] align-middle justify-center text-center ">
+            Empowering Change <span> Saving the Planet</span> <span class="font-thin md:text-[2rem]"> Together we rise,
+                taking action for a better tomorrow.</span></span>
+
     </header>
 
-</body>
+    <!-- -------------------------- what do we do starts ------------------------------------------------ -->
+    <section class="font-[Inter] mt-8 ">
+        <div class=" flex justify-center text-[1.5rem] md:ml-[18.5rem] md:text-[2.2rem]">
+            <span>What do <block class="font-bold">Envision</block> do?</span>
+        </div>
+        <div class="flex flex-col items-center md:mt-10 md:flex md:flex-row">
+            <img class="w-[15rem] md:w-[25vw]  " src="images/qm.png" alt="question_mark_png">
+            <span class="m-4 md:text-[1.5rem]">
+                We are a Non-profit organization that focuses of improving our environment , our vision is to help our
+                surroundings as much as we can , be it caring stray animals , or nurturing plants , or make our space
+                safe for our loved ones . We spread general awareness to all of them who visit our page , be it how to
+                care stray animals? , how to nurture plants? or how to make our space safe? , Want to know how , just
+                dive into Envision’ s Vision .
+                <div class="md:flex md:justify-between md:items-center">
+                    <span>
+                        As said by Heller Keller <br>
+                        Alone, we can do so little <br>
+                        Together, we can do so much."
+                    </span>
+                    <div class="flex justify-center md:justify-end">
+                        <span
+                            class="button bg-green-800 px-7 py-2 text-[#f5f5dc] text-[1.2rem] cursor-pointer mt-4 font-bold rounded-[15px]">
+                            Read more
+                        </span>
+                    </div>
+                </div>
 
-</html>
+            </span>
+        </div>
+        
+    </section>
+
+    <!-- -------------------------- what do we do ends ------------------------------------------------ -->
+
+
+    <script>
+        // const navLinks = document.querySelector('.nav-links')
+        // function onToggleMenu(e) {
+        //     e.name = e.name === 'menu' ? 'close' : 'menu'
+        //     navLinks.classList.toggle('top-[9%]')
+        // }
+
+//         function myFunction() {
+//   var x = document.getElementById("myLinks");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
+    </script>
+
+</body>
