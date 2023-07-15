@@ -1,0 +1,37 @@
+/* -------------------------------------- fonts ---------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* -------------------------------------- fonts ---------------------------------------------------- */
+
+@tailwind base;
+@tailwind components;
+
+.bg-img {
+    /* The image used */
+    background-image: url("images/bg-2.jpeg");
+  
+    min-height: 900px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+
+@tailwind utilities;
