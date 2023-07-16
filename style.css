@@ -11,6 +11,7 @@
     background-image: url("images/bg-2.jpeg");
   
     min-height: 100vh;
+    min-width: 100vw;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -20,19 +21,21 @@
     /* Needed to position the navbar */
     position: relative;
   }
-  
-  /* Position the navbar container inside the image */
-  .container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
+
+
+
+#shadow{
+  text-shadow: 2px 2px 14px #000000;
+}
+
+@media (max-width:(768px))
+{
+  .nav-Links
+  {
+    display: none;
+
   }
-  
-  /* The navbar */
-  .topnav {
-    overflow: hidden;
-    /* background-color: #333; */
-  }
-  
+}
+
 
 @tailwind utilities;

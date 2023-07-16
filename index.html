@@ -13,61 +13,64 @@
 </head>
 
 <body>
-    <header class="bg-img">
+    <header class="bg-cover h-screen " style="background-image: url(images/bg-2.jpeg);">
         <!-- <img class="relative bg-center bg-no-repeat bg-cover min-h-[100vh]" src="images/bg-2.jpeg" alt="bg image"> -->
 
-        <nav class="absolute md:flex  mx-auto w-[100vw]  font-[poppins] text-[#f5f5dc] font-extrabold  overflow-hidden">
+        <nav
+            class=" md:flex md:items-center  mx-auto   font-[poppins] text-[#f5f5dc] font-extrabold  overflow-hidden">
             <div class="right-0 flex justify-center  items-center    ">
                 <img src="images/profile.jpg" alt="logo" class="w-[4rem] mx-[1.5rem] my-[1rem] hidden md:block">
                 <span class="text-[2rem] text-center">
                     <color class="text-green-800">En</color>vision
                 </span>
                 <span class="md:hidden text-[2rem] nav-links">
-                    <!-- <ion-icon onclick="onToggleMenu(this)" name="menu"
-                        class="text-3xl cursor-pointer md:hidden"></ion-icon> -->
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden"></ion-icon>
                     <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                           </a> -->
                 </span>
             </div>
-            <div class=" md:flex md:gap-[2rem] md:w-[100vw] md:justify-end md:mr-10   hidden nav-links overflow-hidden duration-500 items-center left-0 gap-[2rem] "
+            <div class=" hidden md:flex md:flex-row md:gap-[2rem] md:w-[100vw] md:justify-end md:mr-10 flex flex-col nav-Links overflow-hidden duration-500 items-center left-0 gap-[2rem] "
                 id="myLinks">
-                <a href="#home" class="text-[1rem] font-thin lg:text-[1.5rem]">Home</a>
-                <a href="#about_us" class="text-[1rem] font-thin lg:text-[1.5rem]">About</a>
-                <a href="#our_work" class="text-[1rem] font-thin lg:text-[1.5rem]">Our Work</a>
-                <a href="#contact_us" class="text-[1rem] font-thin lg:text-[1.5rem]">Contact us</a>
+                <a href="#home" class="text-[1rem] cursor-pointer font-thin lg:text-[1.5rem]">Home</a>
+                <a href="#about_us" class="text-[1rem] cursor-pointer font-thin lg:text-[1.5rem]">About</a>
+                <a href="#our_work" class="text-[1rem] cursor-pointer font-thin lg:text-[1.5rem]">Our Work</a>
+                <a href="#contact_us" class="text-[1rem] cursor-pointer font-thin lg:text-[1.5rem]">Contact us</a>
                 <a href="#Donate_now"
-                    class="button text-[1rem] bg-green-800 rounded-full px-[1.2rem] py-[0.4rem] font-light lg:text-[1.5rem]">Donate
+                    class="button cursor-pointer text-[1rem] bg-green-800 rounded-full px-[1.2rem] py-[0.4rem] font-light lg:text-[1.5rem]">Donate
                     now</a>
             </div>
         </nav>
         <span
-            class="md:text-[4rem] md:leading-[4rem] absolute text-[#f5f5dc] font-bold text-[2rem] flex flex-col h-[100vh] w-[100vw] align-middle justify-center text-center ">
-            Empowering Change <span> Saving the Planet</span> <span class="font-thin md:text-[2rem]"> Together we rise,
+            class="md:text-[5rem] md:leading-[5rem] absolute text-[#f5f5dc] font-bold text-[2rem] flex flex-col h-[85vh] w-[100vw] align-middle justify-center text-center "
+            id="shadow">
+            Empowering Change <span> Saving the Planet</span> <span class="font-thin md:text-[1.7rem]"> Together we
+                rise,
                 taking action for a better tomorrow.</span></span>
 
     </header>
 
     <!-- -------------------------- what do we do starts ------------------------------------------------ -->
-    <section class="font-[Inter] mt-8 ">
+    <section class="font-[Inter] mt-16 " id="about_us">
         <div class=" flex justify-center text-[1.5rem] md:ml-[18.5rem] md:text-[2.2rem]">
             <span>What do <block class="font-bold">Envision</block> do?</span>
         </div>
         <div class="flex flex-col items-center md:mt-10 md:flex md:flex-row">
-            <img class="w-[15rem] md:w-[25vw]  " src="images/qm.png" alt="question_mark_png">
-            <span class="m-4 md:text-[1.5rem]">
+            <img class="w-[15rem] md:w-[25vw] ml-[3rem] " src="images/qm.png" alt="question_mark_png">
+            <span class="m-4 mr-[5rem] md:text-[1.4rem]">
                 We are a Non-profit organization that focuses of improving our environment , our vision is to help our
                 surroundings as much as we can , be it caring stray animals , or nurturing plants , or make our space
                 safe for our loved ones . We spread general awareness to all of them who visit our page , be it how to
                 care stray animals? , how to nurture plants? or how to make our space safe? , Want to know how , just
-                dive into Envision’ s Vision .
+                dive into Envision’s Vision . <br> <br>
                 <div class="md:flex md:justify-between md:items-center">
                     <span>
-                        As said by Heller Keller <br>
+                        As said by <bold class="font-bold">Helen Keller</bold> <br>
                         Alone, we can do so little <br>
                         Together, we can do so much."
                     </span>
-                    <div class="flex justify-center md:justify-end">
+                    <div class="flex justify-center md:justify-end  ">
                         <span
                             class="button bg-green-800 px-7 py-2 text-[#f5f5dc] text-[1.2rem] cursor-pointer mt-4 font-bold rounded-[15px]">
                             Read more
@@ -77,18 +80,37 @@
 
             </span>
         </div>
-        
+
     </section>
 
     <!-- -------------------------- what do we do ends ------------------------------------------------ -->
 
+    <!-- ----------------------------------------------- Trusted by starts ------------------------------------- -->
+    <section class="  mt-6 md:mt-16">
+        <div class="mb-4 md:mb-6">
+            <span class="flex justify-center text-[1.8rem] font-bold md:text-[2.2rem]">Trusted By</span>
+        </div>
+        <div class="bg-cover " style="background-image: url(images/bg-3.jpg);">
+            <div class="flex justify-between py-9 px-6 md:mx-[4rem] lg:mx-[8rem] ">
+            <a href="#" class="cursor-pointer "><img src="images/ngo-1.jpg" alt="ngo-1" class="w-[6rem] rounded-[10px] md:w-[10rem] md:justify-between "></a>
+            <a href="#" class="cursor-pointer "><img src="images/ngo-1.jpg" alt="ngo-1" class="w-[6rem] rounded-[10px] md:w-[10rem] md:justify-between"></a>
+            <a href="#" class="cursor-pointer "><img src="images/ngo-1.jpg" alt="ngo-1" class="w-[6rem] rounded-[10px] md:w-[10rem] md:justify-between "></a>
+        </div>
+        </div>
+    
+        
+
+    </section>
+
+    <!-- ----------------------------------------------- Trusted by ends ------------------------------------- -->
+
 
     <script>
-        // const navLinks = document.querySelector('.nav-links')
-        // function onToggleMenu(e) {
-        //     e.name = e.name === 'menu' ? 'close' : 'menu'
-        //     navLinks.classList.toggle('top-[9%]')
-        // }
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('flex')
+        }
 
 //         function myFunction() {
 //   var x = document.getElementById("myLinks");
