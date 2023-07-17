@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/Envision_Logo_2.png">
     <!-- For Annimation  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" media="screen and (min-width:800px) " href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="phone.css">
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
@@ -17,17 +18,17 @@
 </head>
 
 <body class="font-[inter]">
-    <header class="bg-cover h-screen " style="background-image: url(images/bg-2.jpeg);" data-aos="fade "
+    <header class="bg-cover h-screen bg-no-repeat bg-center " style="background-image: url(images/bg-2.jpeg);" data-aos="fade "
         data-aos-delay="100" data-aos-duration="1000">
         <!-- <img class="relative bg-center bg-no-repeat bg-cover min-h-[100vh]" src="images/bg-2.jpeg" alt="bg image"> -->
 
         <nav class=" md:flex md:items-center  mx-auto   font-[poppins] text-[#F8FDCF] font-extrabold  overflow-hidden">
-            <div class="right-0 flex justify-center  items-center    ">
-                <img src="images/Envision_Logo_2.png" alt="logo" class="w-[4rem] mx-[1.5rem] my-[1rem] hidden md:block">
+            <div class="right-0 flex md:justify-center justify-between items-center mx-[2rem] my-[1rem]">
+                <img src="images/Envision_Logo_2.png" alt="logo" class="md:w-[4rem] md:mx-[1.5rem] md:my-[1rem] w-[3rem] md:block">
                 <span class="text-[2rem] text-center">
                     <color class="text-[#78C1F3]">En</color>vision
                 </span>
-                <span class="md:hidden text-[2rem] nav-links">
+                <span class="md:hidden text-[2rem] ">
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
                         class="text-3xl cursor-pointer md:hidden"></ion-icon>
                     <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -35,7 +36,7 @@
                           </a> -->
                 </span>
             </div>
-            <div class=" hidden md:flex md:flex-row md:gap-[2rem] md:w-[100vw] md:justify-end md:mr-10 flex flex-col nav-Links overflow-hidden duration-500 items-center left-0 gap-[2rem] "
+            <div class=" hidden w-full md:static md:flex md:flex-row md:gap-[2rem] md:w-[100vw] md:justify-end md:mr-10  flex-col nav-Links overflow-hidden duration-500 items-center left-0 gap-[2rem] "
                 id="myLinks">
                 <a href="#home" class="text-[1rem] cursor-pointer font-thin lg:text-[1.5rem]">Home</a>
                 <a href="#about_us" class="text-[1rem] cursor-pointer font-thin lg:text-[1.5rem]">About</a>
@@ -46,13 +47,13 @@
                     now</a>
             </div>
         </nav>
-        <span
-            class="md:text-[5rem] md:leading-[5rem] absolute text-[#f5f5dc] font-bold text-[2rem] flex flex-col h-[85vh] w-[100vw] align-middle justify-center text-center "
+        <p
+            class="md:text-[5rem] md:leading-[5rem] text-[#f5f5dc] font-bold text-[2rem] flex flex-col text-center justify-center md:mt-[23vh]"
             id="shadow">
-            Empowering Change <span> Saving the Planet</span> <span class="font-thin text-[1rem] md:text-[1.7rem]">
-                Together we
-                rise,
-                taking action for a better tomorrow.</span></span>
+            Empowering Change <br> Saving the Planet <color class="font-thin text-[1rem] md:text-[1.7rem]">
+                Together we rise, taking action for a better tomorrow.
+            </color>
+        </p>
 
     </header>
 
@@ -78,10 +79,11 @@
                         Together, we can do so much."
                     </span>
                     <div class="flex justify-center  md:justify-end  ">
-                        <span
+                        <a href="Read_more-1.html" target="_blank"> <span
                             class="button bg-[#78C1F3] px-7 py-2 text-black text-[1.2rem] cursor-pointer mt-4 font-bold rounded-[15px]">
                             Read more
-                        </span>
+                        </span></a>
+                        
                     </div>
                 </div>
 
@@ -128,7 +130,7 @@
             </div>
             <div class="flex flex-col justify-center items-center md:mt-10 md:flex md:flex-row">
                 <img class="w-[21rem] lg:w-[25vw] md:ml-[3rem] " src="images/img-1.png" alt="Awareness"
-                    data-aos="slide-left" data-aos-duration="1000">
+                    data-aos="fade-left" data-aos-duration="1000">
                 <span class=" mx-[1rem] md:text-[1.8rem] md:ml-[3rem] mt-4 flex-col md:flex-row justify-center"
                     data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
                     <b>Transform Your Living Space with Pure Air</b> <br>
@@ -152,9 +154,8 @@
             <div class="flex justify-center flex-col items-center md:mt-10 md:flex md:flex-row">
                 <span class=" mx-[1rem] md:text-[1.8rem] md:ml-[3rem] mt-4 flex-col md:flex-row justify-center "
                     data-aos="slide-right" data-aos-duration="1000">
-                    <b>Transform Your Living Space with Pure Air</b> <br>
-                    In today’s hassle of air pollution make your living environment
-                    pollution free.
+                    <b>Nurturing Our Feathered Friends</b> <br>
+                    Alongside with out kids taking care for the Little Flyers in Our Environment
                     <div class="hidden md:flex md:justify-between md:items-center">
                         <div class="flex justify-center md:justify-end mt-4 ">
                             <span
@@ -180,7 +181,7 @@
         <section class="font-[Inter] pt-8 md:pt-16  " id="about_us">
             <div class="flex flex-col justify-center items-center md:mt-10 md:flex md:flex-row">
                 <img class="w-[21rem] lg:w-[25vw] md:ml-[3rem] " src="images/img-3.png" alt="Awareness"
-                    data-aos="slide-left" data-aos-duration="1000">
+                    data-aos="fade-left" data-aos-duration="1000">
                 <span class=" mx-[1rem] md:text-[1.8rem] md:ml-[3rem] mt-4 flex-col md:flex-row justify-center "
                     data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
                     <b>Are you disposing leftover meals?</b> <br>
@@ -225,11 +226,37 @@
                     </div>
                 </div>
             </div>
-
+            <div class="flex justify-center mt-10 ">
+                <a class="button bg-[#78C1F3] px-7 py-2 text-black text-[1.2rem] cursor-pointer mt-4 font-bold rounded-[15px]" href="load_more.html" target="_blank">Load more</a>
+               
+            </div>
         </section>
     </div>
     <!-- ----------------------------------------------- Get Awared ends ---------------------------------- -->
 
+
+    <!-- ---------------------------------------------- Footer starts ------------------------------------- -->
+    <div class="footer mt-8">
+        <div class="logoforfoot1">
+        <img src="images/EnVision_Logo_for_footer.png" class="logoforfoot" height="50" width="50">
+        <footer><strong>Empowering Change , Saving the Planet</strong><br>Together we rise, taking action for a better tomorrow.
+        </br></footer>
+        </div>
+        <ul class="quicklink"><b>Quick links</b>
+            <li><a href="#">Donate Now</a></li>
+            <li><a href="#">Search Campaigns</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="email">
+            <b>Subscribe for notifications</b>
+            <input class="subscribe" placeholder="Enter your email"></input>
+            <button id="Subscribe2">Subscribe</button>
+        </ul>
+    </div>
+
+
+    <!-- ---------------------------------------------- Footer ends ------------------------------------- -->
 
     <script>
         const navLinks = document.querySelector('.nav-links')
