@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 /* Responsive footer for phone */
 .footer{
     display: grid;
@@ -52,3 +55,5 @@
   }
   .tool1{margin-bottom: 1.5rem;}
   .tool2{margin-bottom: 1.5rem;}
+
+  
