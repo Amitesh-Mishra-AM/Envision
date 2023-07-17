@@ -28,37 +28,37 @@ body{
     display: none;
 }
 .image1{
-    background-image: url(images/img-1.png);
+    background-image: url(/images/img-1.png);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background-size: cover;
 }
 .image2{
-        background-image: url(images/img-2.png);
+        background-image: url(/images/img-2.png);
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
         background-size: cover;
 }
 .image3{
-        background-image: url(images/img-3.png);
+        background-image: url(/images/img-3.png);
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
         background-size: cover;
 }
 .image4{
-        background-image: url(images/img-4.png);
+        background-image: url(/images/img-4.png);
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
         background-size: cover;
 }
 .image5{
-    background-image: url(images/bulb.jpg);
+    background-image: url(/images/bulb.jpg);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background-size: cover;
 }
 .image6{
-    background-image: url(images/plastic.jpg);
+    background-image: url(/images/plastic.jpg);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background-size: cover;
@@ -100,8 +100,8 @@ section.last{
 
 }
 .blogpage{
-    background-image: url(images/Space1.jpg);
-    height: 30rem;
+    background-image: url(/images/Space1.jpg);
+    height: 17rem;
     background-size: cover;
 }
 .blogpage p{
@@ -109,7 +109,7 @@ section.last{
     font-weight: 500;
     display: flex;
     justify-content: center;
-    padding-top: 11rem;
+    padding-top: 2.3rem;
     font-size: 3rem;
 }
 #decs{

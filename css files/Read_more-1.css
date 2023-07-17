@@ -1,3 +1,7 @@
+
+@tailwind base;
+@tailwind components;
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ body{
     grid-template-rows: 15rem 60rem;
 }
 .image{
-    background-image: url(images/Space1.jpg);
+    background-image: url(/images/Space1.jpg);
     background-size: cover;
 }
 .Heading{
@@ -165,3 +169,5 @@ body{
         justify-content: space-around;
     }
   }
+
+  @tailwind utilities;
