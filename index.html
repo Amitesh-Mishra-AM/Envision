@@ -238,13 +238,19 @@
     <!-- ----------------------------------------------- Get Awared ends ---------------------------------- -->
     <!-- search starts -->
     <section class=" ">
-        <div class="image"></div>
+        <div class="bg-cover rounded-[0.5rem] mb-[1.5rem] font-[inter] text-center font-[1000] text-[2.5rem] py-[3rem]  drop-shadow(2px 2px 20px rgb(0 0 0)) text-white image"
+            style="background-image: url(/images/search_bg.png);">
+            Search for Campaigns
+            <br>
+            in your city
+        </div>
         <!-- -----------------------------------------------------------------Search Area-------------------------------------------- -->
-        <div class="search-bar flex flex-col justify-center">
-            <div class="search">
+        <div class="bg-[#cfecff] px-[1rem] mx-[1rem] py-[1rem] rounded-[0.5rem] search-bar justify-center w-auto">
+            <div class="search h-[6vh] flex ">
                 <form>
                     <label for="state"><b>State:</b></label>
-                    <select id="state" onchange="populateCities()">
+                    <select id="state" onchange="populateCities()"
+                        class="w-[24vw] rounded-[3px] px-[8px] py-[10px] text-[0.9rem] cursor-pointer ">
                         <option value="">Select a state</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -283,14 +289,15 @@
                         <option value="Puducherry">Puducherry</option>
                     </select>
                     <label for="city"><b>City:</b></label>
-                    <select id="city">
+                    <select id="city" class="w-[24vw] rounded-[3px] px-[8px] py-[10px] text-[0.9rem] cursor-pointer">
                         <option value="">Select a city</option>
                     </select>
-                    <button id="search">Search</button>
+                    <button id="search" class="bg-[#003152] text-white px-2 py-1">Search</button>
+                </form>
             </div>
         </div>
-        <div class="results">
-            <div id="selectedOption">
+        <div class="results h-[70vh] bg-[#003152] text-white rounded-[10px] px-[1rem] py-[1rem] mx-[1rem] mt-[1rem]">
+            <div id="selectedOption" class="bg-[#78c1f3] p-4 rounded-[12px] text-[#003152] font-semibold text-[16px]">
                 Select Your State and city to know whether any campaign is going on or not!!!
                 <!-- <div id="flexContainer-1">
                     <div class="flexitem">Event Name</div>
@@ -309,8 +316,6 @@
 
     <!-- ----------------------------------------------- Review Starts  ----------------------------------- -->
 
-
-    <!-- ----------------------------------------------- Review ends  ----------------------------------- -->
     <section class="reviewheading flex justify-center mt-10  text-[1.8rem] md:text-[2.5rem]" data-aos="fade-up "
         data-aos-duration="1000">
         <h1><strong>
@@ -388,6 +393,8 @@
         </div>
     </section>
     </div>
+    <!-- ----------------------------------------------- Review ends  ----------------------------------- -->
+
     <!-- ------------------------------------------------------------------------------------------------Review section---------------------------------------------------------------------------------------- -->
 
     <!-- ---------------------------------------------- Footer starts ------------------------------------- -->
