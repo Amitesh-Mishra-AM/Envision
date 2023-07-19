@@ -214,80 +214,11 @@ html{
 /* ---------------------------------------------------- Review ends ----------------------------------------------------- */
 
 /* search css starts */
-/* *{
-  margin: 0;
-  padding: 0;
-}
-.body{
-  font-family:'Inter', sans-serif;
-  background-color: #f5f5dc;
-}
-section{
-  display: grid;
-  grid-template-rows: 15rem 6.5rem 20rem;
-  grid-template-columns: 80vw;
-  justify-content: center;
-  padding-top: 10rem;
-}
-div.search{
-  display: flex;
-  background-color: #cfecff;
-  font-family:'Inter', sans-serif;
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-button{
-  background-color: #003152;
-  padding: 15px 30px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 3px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-button:hover{
-  background-color: #78C1F3;
-  color: black;
-}
-label .area{
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 0.5rem;
-}
-select{
-  padding: 15px 70px;
-  margin-right: 2rem;
-  border: none;
-  border-radius: 0.4rem;
-}
-.image{
-  background-image: url(banner.png);
-  background-size: cover;
-  border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.search{
-  justify-content: center;
-}
-/* -------Result reflection area---- */
-/* .results {
-  border-radius: 10px;
-  justify-content: center;
-}
-div#selectedOption{
-  color: white;
-  font-family: "Nunito Sans", sans-serif;
-  background-color: #003152;
-  height: 60vh;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 #selectedOption {
   color: black;
+}
+#campaigns{
+  background-color: #78C1F3;
 }
 
 #flexContainer-1{
@@ -297,7 +228,7 @@ div#selectedOption{
 #flexContainer-2{
   display: flex;
   justify-content: space-between;
-} */
+}
 
 /* search css ends */
 
