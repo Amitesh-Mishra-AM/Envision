@@ -5,8 +5,9 @@ let's say you have leftover food from the entire day. Normally, you might just t
 your food doesn't become extra or go to waste. It will recommend giving it to stray animals during the night or inform you about NGOs that you can donate the food to.
 
 # Steps
-Make sure you have node js installed in your system.
-To run the code in your system, go to the terminal of your IDLE and write "npm install" to install all the node_modules needed to 
-run the project, and then enter "npm run start" to start the project.
+(1) Make sure you have node js installed in your system. If not installed install directly from the google.
+
+(2) To run the code in your system, go to the terminal of your idle then write "npm run start" to start the project in your local host.
+
 # working
 To get the working of "Search campaigns in your city" feature, Select "Bihar" in "State" Dropdown and "Patna" in "City" Dropdown.
